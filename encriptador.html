@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="encriptador.css">
+        
+    </head>
+    <body class="body-encriptador">
+        <header class="header-encriptador">
+         <img src="logo-final.jpg" alt="Logo" class="logo">
+         <p class="titulo">Sencript</p>
+
+        </header>
+        <main class="main-encriptador">
+            <section> 
+                <textarea cols="60" rows="18" class="textoIngresado" placeholder="Ingrese texto aquí"></textarea>
+
+                <p class="nota">⚠ Solo letras minúsculas y sin acentos.</p>
+                <input type="submit" value="Encriptar" id= "encriptar" class="botones" onclick="botonEncriptar()">
+        
+                <input type="submit" value="Desencriptar" id="desencriptar" class="botones" onclick="botonDesencriptar()">
+            </section>
+            
+       
+            <section >
+                <textarea cols="40" rows="20" class="mensajeFinal" placeholder="No se ha encontrado ningun mensaje" ></textarea>
+
+                <input type="button" value="copiar" id="copiar" class="botones" onclick="copiar()">
+
+            </section>
+
+        </main>
+        <footer>
+            <p>Desarollado por: Daniela Policella.</p> 
+        </footer>
+        
+    </body>
+    <script src="encriptador.js"></script>
+    
+    </html>
